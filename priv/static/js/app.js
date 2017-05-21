@@ -7,17 +7,24 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import MyAwesomeReactComponent from './MyAwesomeReactComponent';
+import createHistory from 'history/createBrowserHistory';
+import AppContainer from './containers/AppContainer'
 
 injectTapEventPlugin();
 
-const App = () => (
-        <MuiThemeProvider>
-        <MyAwesomeReactComponent />
-        </MuiThemeProvider>
-);
+const history = new createHistory()
 
 ReactDOM.render(
-        <App />,
+    <MuiThemeProvider>
+        <div className="mw9 center ph3-ns">
+            <div className="fl w-100 pa2">
+                <div className="bg-white tc pv4">
+                  <h1 className="dark-blue underline">xpense</h1>
+                  <br></br>
+                  <AppContainer />
+                </div>
+            </div>
+        </div>
+    </MuiThemeProvider>,
     document.getElementById('app')
 );
