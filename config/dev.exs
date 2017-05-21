@@ -11,7 +11,7 @@ config :xpense, Xpense.Web.Endpoint,
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
-  watchers: []
+  watchers: [node: ["node_modules/webpack/bin/webpack.js", "--watch", "--color"]]
 
 # ## SSL Support
 #
@@ -33,7 +33,7 @@ config :xpense, Xpense.Web.Endpoint,
 config :xpense, Xpense.Web.Endpoint,
   live_reload: [
     patterns: [
-      ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
+      ~r{priv/static/.*(js|jsx|css|styl|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
       ~r{lib/xpense/web/views/.*(ex)$},
       ~r{lib/xpense/web/templates/.*(eex)$}
