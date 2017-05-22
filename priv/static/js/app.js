@@ -19,7 +19,7 @@ ReactDOM.render(
         <div className="mw9 center ph3-ns">
             <div className="fl w-100 pa2">
                 <div className="bg-white tc pv4">
-                  <h1 className="dark-blue underline">xpense</h1>
+                  <h1 className="dark-blue">xpense</h1>
                   <br></br>
                   <AppContainer />
                 </div>

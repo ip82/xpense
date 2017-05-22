@@ -1,6 +1,5 @@
 import React from 'react'
-import {Router, Route, IndexRoute} from "react-router"
-import AppContainer from './containers/AppContainer'
+import { Router, Route } from "react-router"
 import HomePage from './containers/HomePageContainer'
 import signInComponent from './components/signInComponent';
 import signUpComponent from './components/signUpComponent';

@@ -5,6 +5,10 @@
 /*.ez
 /node_modules
 
+# compiled assets
+priv/static/js/application.js
+priv/static/css/application.css
+
 # Generated on crash by the VM
 erl_crash.dump
 
